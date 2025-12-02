@@ -3,8 +3,8 @@ CM_TO_METERS = 0.01
 FEET_TO_INCHES = 12
 
 def convert_height_to_meters(feet, inches):
-    feet_cm = feet * FEET_TO_INCHES
-    inches_cm = feet_cm * INCHES_TO_CM + (inches * INCHES_TO_CM)
+    feet_inches = feet * FEET_TO_INCHES
+    inches_cm = feet_inches * INCHES_TO_CM + (inches * INCHES_TO_CM)
     meter = inches_cm * CM_TO_METERS
     print(meter)
 
